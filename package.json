@@ -1,0 +1,24 @@
+{
+  "name": "bcoin-tx",
+  "version": "1.0.0",
+  "description": "Bitcoin transaction object",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test/*.js"
+  },
+  "keywords": [
+    "bcoin",
+    "bitcoin",
+    "transaction",
+    "tx"
+  ],
+  "author": "Stanislas Marion <stanislas.marion@gmail.com> (http://github.com/czzarr)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  },
+  "dependencies": {
+    "bcoin-protocol": "^1.2.0",
+    "bn.js": "^0.15.0"
+  }
+}
