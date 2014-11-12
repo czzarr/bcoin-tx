@@ -18,7 +18,7 @@
     "mocha": "^2.0.1"
   },
   "dependencies": {
-    "bcoin-protocol": "^1.2.0",
+    "bcoin-protocol": "^1.3.0",
     "bcoin-script": "^1.0.0",
     "bcoin-utils": "^1.1.0",
     "bn.js": "^0.15.0"
