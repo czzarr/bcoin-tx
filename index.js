@@ -49,7 +49,8 @@ TX.prototype.clone = function clone() {
 };
 
 TX.prototype.hash = function hash(enc) {
-    var h = utils.dsha256(this.render());
+    //var h = utils.dsha256(this.render());
+    var h = utils.dsha256(utils.toArray(this._raw))
     return enc === 'hex' ? utils.toHex(h) : h;
 };
 
