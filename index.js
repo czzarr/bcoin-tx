@@ -53,7 +53,7 @@ TX.prototype.hash = function hash(enc) {
     return enc === 'hex' ? utils.toHex(h) : h;
 };
 
-Tx.prototype.txid = function txid(enc) {
+TX.prototype.txid = function txid(enc) {
   var id = utils.dsha256(utils.toArray(this._raw)).reverse()
   return enc === 'hex' ? utils.toHex(id) : id;
 };
