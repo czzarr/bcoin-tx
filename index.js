@@ -49,13 +49,12 @@ TX.prototype.clone = function clone() {
 };
 
 TX.prototype.hash = function hash(enc) {
-    //var h = utils.dsha256(this.render());
-    var h = utils.dsha256(utils.toArray(this._raw))
+    var h = utils.dsha256(this.render())
     return enc === 'hex' ? utils.toHex(h) : h;
 };
 
 TX.prototype.txid = function txid(enc) {
-  var id = utils.dsha256(utils.toArray(this._raw)).reverse()
+  var id = utils.dsha256(this.render().reverse())
   return enc === 'hex' ? utils.toHex(id) : id;
 };
 
