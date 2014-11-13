@@ -54,7 +54,7 @@ TX.prototype.hash = function hash(enc) {
 };
 
 TX.prototype.txid = function txid(enc) {
-  var id = utils.dsha256(this.render().reverse())
+  var id = utils.dsha256(this.render()).reverse()
   return enc === 'hex' ? utils.toHex(id) : id;
 };
 
